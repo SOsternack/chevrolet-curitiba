@@ -2,33 +2,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Equinox RS AWD 1.5 Turbo 2025 - Ficha Técnica</title>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Equinox RS AWD 1.5 Turbo 2025 - Ficha Técnica</title>
   <style>
-    body { font-family: Arial, sans-serif; background-color: #072c10; color: #e5f5ed; padding: 20px; }
+    body { font-family: Arial, sans-serif; background-color: #072c10; color: #e5f5ed; margin: 0; padding: 20px; }
     h1, h2 { text-align: center; }
-    ul { max-width: 800px; margin: auto; padding-left: 20px; }
-    a { display: block; text-align: center; margin-top: 30px; background: #05a35c; color: #fff;
-        padding: 10px; border-radius: 5px; text-decoration: none; max-width: 300px; margin-left: auto; margin-right: auto; }
+    .galeria { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 20px auto; }
+    .galeria img { width: 300px; border-radius: 6px; box-shadow: 0 0 5px #000; }
+    .ficha { max-width: 900px; margin: 30px auto; padding: 20px; background: #000; border-radius: 6px; }
+    .ficha h2 { color: #05a35c; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 10px; }
+    .botao-pdf {
+      display: block; text-align: center; margin: 30px auto; background: #05a35c;
+      color: white; padding: 12px 20px; border-radius: 6px; text-decoration: none; width: max-content;
+    }
   </style>
 </head>
 <body>
   <h1>Equinox RS AWD 1.5 Turbo 2025</h1>
-  <h2>Ficha Técnica</h2>
-  <ul>
-    <li>Motorização 1.5 Turbo com injeção direta</li>
-    <li>Potência máxima de 177 cv</li>
-    <li>Torque máximo de 275 Nm</li>
-    <li>Transmissão automática de 8 velocidades</li>
-    <li>Tração integral (AWD)</li>
-    <li>Rodas de alumínio aro 20"</li>
-    <li>Design com grade frontal e para-choques exclusivos RS</li>
-    <li>Interior preto Backen Black com detalhes em vermelho</li>
-    <li>Acabamentos em preto brilhante e volante com emblema RS</li>
-    <li>6 Airbags, controle de estabilidade, alerta de colisão e frenagem automática</li>
-    <li>Sistema multimídia MyLink com tela de 8", Wi-Fi nativo, OnStar e Android Auto/Apple CarPlay</li>
-  </ul>
-  <a href="ficha_equinox_rs.pdf" download>⬇️ Baixar Ficha Técnica em PDF</a>
+
+  <div class="galeria" id="galeria"></div>
+
+  <div class="ficha">
+    <h2>Ficha Técnica Completa</h2>
+    <ul>
+      <li>Versão: RS AWD</li>
+      <li>Motorização: 1.5 Turbo com injeção direta</li>
+      <li>Potência: 177 cv</li>
+      <li>Torque: 275 Nm</li>
+      <li>Transmissão: Automática de 8 velocidades</li>
+      <li>Tração: Integral (AWD)</li>
+      <li>Direção: Elétrica</li>
+      <li>Suspensão dianteira: Independente tipo McPherson</li>
+      <li>Suspensão traseira: Independente tipo Multilink</li>
+      <li>Freios: Discos nas 4 rodas com ABS e EBD</li>
+      <li>Rodas: Liga leve aro 20” com design exclusivo RS</li>
+      <li>Acabamentos internos: Estilo Backen Black com detalhes em vermelho</li>
+      <li>Multimídia: Chevrolet MyLink 8” com Android Auto e Apple CarPlay</li>
+      <li>Conectividade: Wi-Fi nativo, OnStar e sistema de atualização remota</li>
+      <li>Assistente de permanência em faixa com correção ativa</li>
+      <li>Alerta de colisão frontal com frenagem automática de emergência</li>
+      <li>Faróis: Full LED com acendimento automático</li>
+      <li>Controle de tração e estabilidade + assistente de partida em rampa</li>
+      <li>6 Airbags (2 frontais, 2 laterais, 2 de cortina)</li>
+      <li>Espelhos com rebatimento elétrico e desembaçador</li>
+      <li>Sensor de ponto cego + sensor de estacionamento dianteiro e traseiro</li>
+    </ul>
+    <a href="ficha_equinox_rs.pdf" class="botao-pdf" download>⬇️ Baixar Ficha Técnica em PDF</a>
+  </div>
+
+  <script>
+    const imagens = 10;
+    const galeria = document.getElementById("galeria");
+    for (let i = 1; i <= imagens; i++) {
+      const img = document.createElement("img");
+      img.src = `equinoxrs${i}.jpg`;
+      img.alt = `Equinox RS ${i}`;
+      galeria.appendChild(img);
+    }
+  </script>
 </body>
 </html>

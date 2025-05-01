@@ -2,22 +2,53 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <title>CHEVROLET CURITIBA - SERGIO OSTERNACK</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #072c10; color: #e5f5ed; margin: 0; padding: 20px; }
-        h1 { text-align: center; }
-        ul { max-width: 800px; margin: 30px auto; padding: 0; list-style: none; }
-        li { background: #000; margin: 10px 0; padding: 15px; border-radius: 5px; }
-        a { color: #05a35c; text-decoration: none; font-weight: bold; display: block; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHEVROLET CURITIBA - SERGIO OSTERNACK</title>
+  <link rel="manifest" href="manifest.json" />
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #072c10; color: #e5f5ed; }
+    .container { display: flex; min-height: 100vh; }
+    .sidebar {
+      width: 260px; background: #000; padding: 20px; position: fixed; height: 100vh; overflow-y: auto;
+    }
+    .sidebar h2 { color: #05a35c; font-size: 18px; border-bottom: 1px solid #05a35c; padding-bottom: 5px; }
+    .sidebar a {
+      display: block; margin: 10px 0; color: #e5f5ed; text-decoration: none; padding: 8px; border-radius: 4px;
+    }
+    .sidebar a:hover { background: #05a35c; color: #000; }
+    .content { margin-left: 260px; padding: 20px; }
+    h1 { text-align: center; }
+    .whatsapp-float {
+      position: fixed; bottom: 20px; right: 20px; background-color: #25d366;
+      color: white; border-radius: 50%; width: 60px; height: 60px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 30px; text-decoration: none; box-shadow: 2px 2px 5px #000;
+      z-index: 999;
+    }
+  </style>
 </head>
 <body>
-    <h1>CHEVROLET CURITIBA - SERGIO OSTERNACK</h1>
-    <ul>
-        <li><a href="onix-ltz-turbo-at-2025/index.html">Onix LTZ 1.0 Turbo AT 2025</a></li>
-        <li><a href="#">Outros modelos serão adicionados aqui...</a></li>
-    </ul>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Modelos</h2>
+      <a href="onix-ltz-turbo-at-2025/index.html">Onix LTZ 1.0 Turbo AT 2025</a>
+      <a href="#">ONIX Hatch</a>
+      <a href="#">ONIX Plus</a>
+      <a href="#">Tracker</a>
+      <a href="#">Spin</a>
+      <a href="#">Montana</a>
+      <a href="#">S10</a>
+      <a href="#">Trailblazer</a>
+      <a href="#">Equinox</a>
+      <a href="#">Silverado</a>
+      <a href="#">Elétricos</a>
+    </div>
+    <div class="content">
+      <h1>CHEVROLET CURITIBA - SERGIO OSTERNACK</h1>
+      <p style="text-align:center;">🚘 Explore os modelos disponíveis e acesse a ficha técnica de cada um.</p>
+    </div>
+  </div>
+  <a href="https://wa.me/5541992333851" class="whatsapp-float" target="_blank" title="Fale comigo no WhatsApp">💬</a>
 </body>
 </html>

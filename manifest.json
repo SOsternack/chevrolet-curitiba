@@ -1,0 +1,21 @@
+
+{
+  "name": "Chevrolet Curitiba - Sergio Osternack",
+  "short_name": "Chevrolet",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#072c10",
+  "theme_color": "#05a35c",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
